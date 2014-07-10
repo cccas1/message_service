@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@RemoteProxy(name="BoardMgr")
+@RemoteProxy(name="SendMgr")
 public class SendMgrImpl implements SendMgr{
 	
 	@Autowired

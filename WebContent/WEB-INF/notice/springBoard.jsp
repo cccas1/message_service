@@ -6,7 +6,7 @@
 <head>
 <script type="text/javascript" src='/grace/dwr/engine.js'></script>
 <script type="text/javascript" src='/grace/dwr/util.js'></script>
-<script type='text/javascript' src='/grace/dwr/interface/BoardMgr.js'></script>
+<script type='text/javascript' src='/grace/dwr/interface/SendMgr.js'></script>
 <script type='text/javascript'>
 function getList(){
 	BoardMgr.getAllBoardLists(function(results){
