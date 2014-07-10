@@ -1,3 +1,3 @@
 function gettest(){
-	alert($j('#aa').text());
+	alert('d');
 }
