@@ -1,3 +1,0 @@
-function gettest(){
-	alert('d');
-}

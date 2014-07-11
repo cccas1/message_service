@@ -21,20 +21,15 @@ public class SendController {
 	@Autowired
 	protected SendDaoImpl boardDao;
 	
-	@RequestMapping("/notice/springBoard.do")
-	public void hello(@RequestParam Map<String, Object> paramMap, ModelMap model) throws Throwable{
-		model.put("message", "안녕");
-		model.put("button", "/notice/springBoards.do");
-		//model.put("results", boardDao.countBoard());
+	@RequestMapping("/send/sendMessage")
+	public void sendMessage(@RequestParam Map<String, Object> paramMap, ModelMap model) throws Throwable{
+		
 	}
 	
-	@RequestMapping("/notice/springBoards.do")
+	/*@RequestMapping("/send/sendMessage.do")
 	public ModelAndView helloView() throws Exception {
 		ModelAndView mv = new ModelAndView();
-		mv.addObject("message", "그래");
-		mv.addObject("button", "/notice/springBoard.do");
-		//mv.addObject("results", boardDao.countBoard());
-		mv.setViewName("/notice/springBoard");
+		mv.setViewName("/send/sendMessage");
 		return mv;
-	}
+	}*/
 }

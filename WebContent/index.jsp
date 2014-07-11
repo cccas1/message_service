@@ -7,11 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-Hello Grace An!
-
-<a href="./notice/springBoard.do">
+<a href="./send/sendMessage.do">
 	<button type="button">
-		Go To Board
+		SEND
 	</button>
 </a>
 </body>
