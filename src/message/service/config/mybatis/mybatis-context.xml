@@ -7,7 +7,7 @@
     
     <bean id="propertyPlaceholderConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
-            <value>/WEB-INF/classes/config/mybatis/jdbc.properties</value> 
+            <value>/WEB-INF/classes/message/service/config/mybatis/jdbc.properties</value> 
         </property>
     </bean>
     
@@ -21,7 +21,7 @@
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">     
     	<property name="dataSource" ref="dataSource" />                                         
     	<property name="mapperLocations" value="classpath:message/service/**/dao/impl/*.xml" />  
-    	<property name="configLocation" value="/WEB-INF/classes/config/mybatis/mybatis-config.xml" />          
+    	<property name="configLocation" value="/WEB-INF/classes/message/service/config/mybatis/mybatis-config.xml" />          
     	<property name="transactionFactory">                                                    
      		<bean class="org.apache.ibatis.transaction.managed.ManagedTransactionFactory" />
       	</property>

@@ -25,7 +25,7 @@ public class SendController {
 	public void hello(@RequestParam Map<String, Object> paramMap, ModelMap model) throws Throwable{
 		model.put("message", "안녕");
 		model.put("button", "/notice/springBoards.do");
-		model.put("results", boardDao.countBoard());
+		//model.put("results", boardDao.countBoard());
 	}
 	
 	@RequestMapping("/notice/springBoards.do")
@@ -33,7 +33,7 @@ public class SendController {
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("message", "그래");
 		mv.addObject("button", "/notice/springBoard.do");
-		mv.addObject("results", boardDao.countBoard());
+		//mv.addObject("results", boardDao.countBoard());
 		mv.setViewName("/notice/springBoard");
 		return mv;
 	}
